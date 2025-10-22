@@ -37,12 +37,12 @@ const Scrollable = () => {
       
       <div 
         ref={scrollRef}
-        className="flex overflow-x-auto scrollbar-hide gap-4 p-4"
+        className="flex overflow-x-auto scrollbar-hide gap-4 px-4 pb-1"
       >
         {boxes.map((box) => {
           const ImageComponent = box.component;
           return (
-            <div key={box.id} className="flex-shrink-0 w-110 h-85 mt-15">
+            <div key={box.id} className="flex-shrink-0 w-120 h-100 mt-20">
               <ImageComponent />
             </div>
           );
